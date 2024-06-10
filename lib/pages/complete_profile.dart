@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../common/colo_extension.dart';
 import '../common_widg/round_button.dart';
@@ -17,6 +18,14 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
   TextEditingController txtWeight = TextEditingController();
   TextEditingController txtHeight = TextEditingController();
   String? selectedGender; // Cinsiyet seçimi için state değişkeni
+
+  Future<void> _saveUserData() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setString('dateOfBirth', txtDate.text);
+    await prefs.setString('weight', txtWeight.text);
+    await prefs.setString('height', txtHeight.text);
+    await prefs.setString('gender', selectedGender ?? '');
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -188,7 +197,8 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                       ),
                       RoundButton(
                           title: "Next >",
-                          onPressed: () {
+                          onPressed: () async {
+                            await _saveUserData();
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(

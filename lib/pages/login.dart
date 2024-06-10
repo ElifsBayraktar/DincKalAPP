@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'complete_profile.dart';
 import 'register.dart';
 
 class LoginScreen extends StatefulWidget {
-  // ignore: use_key_in_widget_constructors
   const LoginScreen({Key? key});
 
   @override
-  // ignore: library_private_types_in_public_api
   _LoginScreenState createState() => _LoginScreenState();
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  TextEditingController _usernameController = TextEditingController();
+  TextEditingController _passwordController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -95,9 +97,10 @@ class _LoginScreenState extends State<LoginScreen> {
                                 ),
                               ),
                             ),
-                            child: const TextField(
-                              decoration: InputDecoration(
-                                hintText: "Email or Phone number",
+                            child: TextField(
+                              controller: _usernameController,
+                              decoration: const InputDecoration(
+                                hintText: "Kullanıcı Adı",
                                 hintStyle: TextStyle(color: Colors.blueGrey),
                                 border: InputBorder.none,
                               ),
@@ -130,8 +133,10 @@ class _LoginScreenState extends State<LoginScreen> {
                                 ),
                               ),
                             ),
-                            child: const TextField(
-                              decoration: InputDecoration(
+                            child: TextField(
+                              controller: _passwordController,
+                              obscureText: true,
+                              decoration: const InputDecoration(
                                 hintText: "Password",
                                 hintStyle: TextStyle(color: Colors.blueGrey),
                                 border: InputBorder.none,
@@ -153,6 +158,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                     GestureDetector(
                       onTap: () {
+                        String username = _usernameController.text;
+                        String password = _passwordController.text;
+                        _saveUserData(username, password);
                         Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -215,5 +223,11 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
       ),
     );
+  }
+
+  Future<void> _saveUserData(String username, String password) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    prefs.setString('username', username);
+    prefs.setString('password', password);
   }
 }

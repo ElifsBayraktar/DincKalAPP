@@ -1,13 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'login.dart';
 
 class RegisterScreen extends StatelessWidget {
-  // ignore: use_super_parameters
   const RegisterScreen({Key? key}) : super(key: key);
+
+  Future<void> _saveUserData(
+      String name, String emailOrPhone, String password) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setString('name', name);
+    await prefs.setString('emailOrPhone', emailOrPhone);
+    await prefs.setString('password', password);
+  }
 
   @override
   Widget build(BuildContext context) {
+    TextEditingController nameController = TextEditingController();
+    TextEditingController emailOrPhoneController = TextEditingController();
+    TextEditingController passwordController = TextEditingController();
+
     return Scaffold(
       body: Container(
         padding: const EdgeInsets.symmetric(vertical: 15),
@@ -25,9 +37,7 @@ class RegisterScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            const SizedBox(
-              height: 25,
-            ),
+            const SizedBox(height: 25),
             const Padding(
               padding: EdgeInsets.all(10),
               child: Column(
@@ -37,9 +47,7 @@ class RegisterScreen extends StatelessWidget {
                     "Register",
                     style: TextStyle(color: Colors.white, fontSize: 45),
                   ),
-                  SizedBox(
-                    height: 2,
-                  ),
+                  SizedBox(height: 2),
                   Text(
                     "Create your account",
                     style: TextStyle(color: Colors.white, fontSize: 25),
@@ -47,9 +55,7 @@ class RegisterScreen extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(
-              height: 40,
-            ),
+            const SizedBox(height: 40),
             Expanded(
               child: Container(
                 decoration: const BoxDecoration(
@@ -62,9 +68,7 @@ class RegisterScreen extends StatelessWidget {
                 padding: const EdgeInsets.all(20),
                 child: Column(
                   children: <Widget>[
-                    const SizedBox(
-                      height: 90,
-                    ),
+                    const SizedBox(height: 90),
                     Container(
                       padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
@@ -78,10 +82,11 @@ class RegisterScreen extends StatelessWidget {
                           ),
                         ],
                       ),
-                      child: const Column(
+                      child: Column(
                         children: <Widget>[
                           TextField(
-                            decoration: InputDecoration(
+                            controller: nameController,
+                            decoration: const InputDecoration(
                               hintText: "Name",
                               hintStyle: TextStyle(color: Colors.blueGrey),
                               border: InputBorder.none,
@@ -104,10 +109,11 @@ class RegisterScreen extends StatelessWidget {
                           ),
                         ],
                       ),
-                      child: const Column(
+                      child: Column(
                         children: <Widget>[
                           TextField(
-                            decoration: InputDecoration(
+                            controller: emailOrPhoneController,
+                            decoration: const InputDecoration(
                               hintText: "Email or Phone Number",
                               hintStyle: TextStyle(color: Colors.blueGrey),
                               border: InputBorder.none,
@@ -130,11 +136,12 @@ class RegisterScreen extends StatelessWidget {
                           ),
                         ],
                       ),
-                      child: const Column(
+                      child: Column(
                         children: <Widget>[
                           TextField(
+                            controller: passwordController,
                             obscureText: true,
-                            decoration: InputDecoration(
+                            decoration: const InputDecoration(
                               hintText: "Password",
                               hintStyle: TextStyle(color: Colors.blueGrey),
                               border: InputBorder.none,
@@ -143,12 +150,14 @@ class RegisterScreen extends StatelessWidget {
                         ],
                       ),
                     ),
-                    const SizedBox(
-                      height: 70,
-                    ),
+                    const SizedBox(height: 70),
                     GestureDetector(
-                      onTap: () {
-                        // Register butonuna tıklandığında kullanıcıyı LoginScreen sayfasına yönlendir
+                      onTap: () async {
+                        await _saveUserData(
+                          nameController.text,
+                          emailOrPhoneController.text,
+                          passwordController.text,
+                        );
                         Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
@@ -175,16 +184,11 @@ class RegisterScreen extends StatelessWidget {
                           child: Text(
                             "Register",
                             style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18,
-                              fontWeight: FontWeight.w400,
-                            ),
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold),
                           ),
                         ),
                       ),
-                    ),
-                    const SizedBox(
-                      height: 20,
                     ),
                   ],
                 ),

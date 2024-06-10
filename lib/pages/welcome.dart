@@ -1,19 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'login.dart';
 
-// ignore: camel_case_types
-class splashscreen extends StatefulWidget {
-  // ignore: use_key_in_widget_constructors
-  const splashscreen({Key? key});
+class Splashscreen extends StatefulWidget {
+  const Splashscreen({Key? key});
 
   @override
-  // ignore: library_private_types_in_public_api
   _splashscreenState createState() => _splashscreenState();
 }
 
-// ignore: camel_case_types
-class _splashscreenState extends State<splashscreen> {
+class _splashscreenState extends State<Splashscreen> {
   int currentIndex = 0;
   late PageController _controller;
 
@@ -21,6 +18,23 @@ class _splashscreenState extends State<splashscreen> {
   void initState() {
     _controller = PageController(initialPage: 0);
     super.initState();
+    checkFirstSeen();
+  }
+
+  Future<void> checkFirstSeen() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    bool _firstSeen = (prefs.getBool('firstSeen') ?? false);
+    if (!_firstSeen) {
+      // Eğer uygulama ilk kez açıldıysa splash ekranını göster
+      await prefs.setBool('firstSeen', true);
+    } else {
+      // Eğer uygulama daha önce açıldıysa direkt olarak giriş ekranına yönlendir
+      Future.delayed(Duration.zero, () {
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (_) => const LoginScreen()),
+        );
+      });
+    }
   }
 
   @override

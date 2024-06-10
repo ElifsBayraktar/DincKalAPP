@@ -1,3 +1,4 @@
+import 'package:dinckallapp/view/home/home.dart';
 import 'package:flutter/material.dart';
 
 import 'pages/welcome.dart';
@@ -12,6 +13,6 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-        debugShowCheckedModeBanner: false, home: splashscreen());
+        debugShowCheckedModeBanner: false, home: Splashscreen());
   }
 }

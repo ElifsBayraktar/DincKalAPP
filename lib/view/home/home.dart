@@ -1,12 +1,13 @@
-import 'package:dinckallapp/pages/profile.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
-import '../../pages/Exercise_page.dart';
+import '../../pages/exercise_page.dart';
+import '../../pages/profile.dart';
 import '../../pages/settings_page.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -14,6 +15,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
+  String _username = '';
 
   // İlgili sayfaların listesi
   final List<Widget> _screens = [
@@ -24,6 +26,19 @@ class _HomeScreenState extends State<HomeScreen> {
     // Profile screen
     // Settings screen
   ];
+
+  @override
+  void initState() {
+    super.initState();
+    _loadUsername();
+  }
+
+  Future<void> _loadUsername() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    setState(() {
+      _username = prefs.getString('username') ?? '';
+    });
+  }
 
   void _onTabChange(int index) {
     setState(() {
@@ -52,16 +67,16 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
         ),
-        child: const SafeArea(
+        child: SafeArea(
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       "Welcome Back",
                       style: TextStyle(
                         color: Colors.white,
@@ -69,8 +84,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                     Text(
-                      "Elifs.Bayraktar",
-                      style: TextStyle(
+                      _username, // Kullanıcı adını burada gösteriyoruz
+                      style: const TextStyle(
                         color: Colors.white,
                         fontSize: 29,
                       ),
