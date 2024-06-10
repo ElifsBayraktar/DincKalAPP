@@ -18,22 +18,22 @@ class _ExerciseScreenState extends State<ExerciseScreen> {
   List workArr = [
     {
       "name": "Karın",
-      "image": "assets/images/welcome.jpeg",
+      "image": "assets/images/Abdomen.jpeg",
       "subtitle": "Bel bölgenizde daha fazla şekil ve kas için..."
     },
     {
-      "name": "Sırt",
-      "image": "assets/images/welcome.jpeg",
-      "subtitle": "Daha sert bir sırt..."
+      "name": "Göğüs",
+      "image": "assets/images/göğüs.jpeg",
+      "subtitle": "Daha sert bir göğüs..."
     },
     {
       "name": "Kol",
-      "image": "assets/images/welcome.jpeg",
+      "image": "assets/images/Arm.jpeg",
       "subtitle": "Sağlam ve güçlü kollar için..."
     },
     {
       "name": "Bacak",
-      "image": "assets/images/welcome.jpeg",
+      "image": "assets/images/Leg.jpeg",
       "subtitle": "Daha dengeli ve güçlü bacaklar..."
     },
   ];
