@@ -1,24 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import '../common/colo_extension.dart';
+import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
-class WorkoutDetailView extends StatefulWidget {
-  const WorkoutDetailView({Key? key});
+class WorkoutDetailView extends StatelessWidget {
+  final String title;
+  final List<Map<String, String>> exercises;
 
-  @override
-  State<WorkoutDetailView> createState() => _WorkoutDetailViewState();
-}
-
-class _WorkoutDetailViewState extends State<WorkoutDetailView> {
-  List workArr = [
-    {"name": "Running", "image": "assets/images/welcome.jpeg"},
-    {"name": "Jumping", "image": "assets/images/welcome.jpeg"},
-    {"name": "Running", "image": "assets/images/welcome.jpeg"},
-    {"name": "Jumping", "image": "assets/images/welcome.jpeg"},
-    {"name": "Jumping", "image": "assets/images/welcome.jpeg"},
-    {"name": "Jumping", "image": "assets/images/welcome.jpeg"},
-    {"name": "Jumping", "image": "assets/images/welcome.jpeg"},
-  ];
+  const WorkoutDetailView({
+    required this.title,
+    required this.exercises,
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +30,7 @@ class _WorkoutDetailViewState extends State<WorkoutDetailView> {
           ),
         ),
         title: Text(
-          "Climbers",
+          title,
           style: TextStyle(
             color: TColor.white,
             fontSize: 20,
@@ -111,11 +103,11 @@ class _WorkoutDetailViewState extends State<WorkoutDetailView> {
                 height: media.width * 5.2,
                 child: ListView.builder(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
-                  itemCount: workArr.length,
+                  itemCount: exercises.length,
                   physics:
                       NeverScrollableScrollPhysics(), // Otomatik yukarı kaydırmayı engeller
                   itemBuilder: (context, index) {
-                    var wObj = workArr[index];
+                    var wObj = exercises[index];
                     return Padding(
                       padding: const EdgeInsets.symmetric(vertical: 5.0),
                       child: Card(
@@ -125,13 +117,13 @@ class _WorkoutDetailViewState extends State<WorkoutDetailView> {
                             Image.asset(
                               wObj["image"].toString(),
                               width: media.width,
-                              height: media.width * 0.6,
+                              height: media.width * 0.4,
                               fit: BoxFit.cover,
                             ),
                             Padding(
                               padding: const EdgeInsets.all(7.0),
                               child: Text(
-                                wObj["name"],
+                                wObj["name"]!,
                                 style: TextStyle(
                                   color: TColor.secondaryText,
                                   fontSize: 20,

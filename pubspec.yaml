@@ -38,6 +38,28 @@ flutter:
   assets:
   - assets/images/
   - assets/icons/
+  - assets/images/göğüs.jpeg
+  - assets/images/Diz-Çekmekarın.png
+  - assets/images/Bench_Pressgöğüs.png
+  - assets/images/Cable_Flygöğüs.png
+  - assets/images/DB_Flygöğüs.png
+  - assets/images/DB_Pressgöğüs.png
+  - assets/images/PushUpgöğüs.png
+  - assets/images/Machine_Flygöğüs.png
+  - assets/images/Bench_dipskol.png
+  - assets/images/Biceps_Curlkol.png
+  - assets/images/Cable_Pushdownkol.png
+  - assets/images/Concentration_Curlkol.png
+  - assets/images/Hammer_Curlkol.png
+  - assets/images/Preacher_Curlkol.png
+  - assets/images/DB_Squat-1,2bacak.png
+  - assets/images/DB_Squat-1bacak.png
+  - assets/images/Hip_Thrustbacak.png
+  - assets/images/Hip Adductionbacak.png
+  - assets/images/Leg Extensionbacak.png
+  - assets/images/Leg_Curlbacak.png
+  - assets/images/Lungesbacak.png
+  - assets/images/Squatbacak.png
 
 fonsts:
   - family: Poppins

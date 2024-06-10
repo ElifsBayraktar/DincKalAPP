@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../common/colo_extension.dart';
 import '../common_widg/round_button.dart';
 import 'tab_button.dart';
@@ -14,6 +13,63 @@ class ExerciseScreen extends StatefulWidget {
 
 class _ExerciseScreenState extends State<ExerciseScreen> {
   int isActiveTab = 0;
+
+  final Map<String, List<Map<String, String>>> exerciseDetails = {
+    "Karın": [
+      {"name": "Diz-Çekme", "image": "assets/images/Diz-Çekmekarın.png"},
+      {
+        "name": "Crunch Machine",
+        "image": "assets/images/Crunch Machinekarın.png"
+      },
+      {"name": "Crunch", "image": "assets/images/Crunchkarın.png"},
+      {"name": "Twist", "image": "assets/images/Twistkarın.png"},
+      {
+        "name": "Wheel_RollOut",
+        "image": "assets/images/Wheel_RollOutkarın.png"
+      },
+    ],
+    "Göğüs": [
+      {"name": "Bench Press", "image": "assets/images/Bench_Pressgöğüs.png"},
+      {"name": "Cable Fly", "image": "assets/images/Cable_Flygöğüs.png"},
+      {"name": "Dumbbel Fly", "image": "assets/images/DB_Flygöğüs.png"},
+      {"name": "Dumbbel Press", "image": "assets/images/DB_Pressgöğüs.png"},
+      {"name": "Push Up", "image": "assets/images/PushUpgöğüs.png"},
+      {"name": "Machine Fly", "image": "assets/images/Machine_Flygöğüs.png"}
+    ],
+    "Kol": [
+      {"name": "Bench Dips", "image": "assets/images/Bench_dipskol.png"},
+      {"name": "Biceps Curl", "image": "assets/images/Biceps_Curlkol.png"},
+      {
+        "name": "Cable PushDown",
+        "image": "assets/images/Cable_Pushdownkol.png"
+      },
+      {
+        "name": "Concentration Curl",
+        "image": "assets/images/Concentration_Curlkol.png"
+      },
+      {"name": "Hammer Curl", "image": "assets/images/Hammer_Curlkol.png"},
+      {"name": "Preacher Curl", "image": "assets/images/Preacher_Curlkol.png"},
+    ],
+    "Bacak": [
+      {
+        "name": "Dumbbel Squat 2",
+        "image": "assets/images/DB_Squat-1,2bacak.png"
+      },
+      {"name": "Dumbbel Squat 1", "image": "assets/images/DB_Squat-1bacak.png"},
+      {"name": "Hip Thrust", "image": "assets/images/Hip_Thrustbacak.png"},
+      {
+        "name": "Hip Adduction",
+        "image": "assets/images/Hip Adductionbacak.png"
+      },
+      {
+        "name": "Leg Extension",
+        "image": "assets/images/Leg Extensionbacak.png"
+      },
+      {"name": "Leg Curl", "image": "assets/images/Leg_Curlbacak.png"},
+      {"name": "Lunges", "image": "assets/images/Lungesbacak.png"},
+      {"name": "Squat", "image": "assets/images/Squatbacak.png"},
+    ],
+  };
 
   List workArr = [
     {
@@ -168,11 +224,19 @@ class _ExerciseScreenState extends State<ExerciseScreen> {
                                         fontSize: 14,
                                         fontWeight: FontWeight.w500,
                                         onPressed: () {
+                                          String category = wObj["name"];
+                                          List<Map<String, String>> exercises =
+                                              exerciseDetails[category]!;
                                           Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                  builder: (context) =>
-                                                      const WorkoutDetailView()));
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (context) =>
+                                                  WorkoutDetailView(
+                                                title: category,
+                                                exercises: exercises,
+                                              ),
+                                            ),
+                                          );
                                         },
                                       )),
                                 ],
