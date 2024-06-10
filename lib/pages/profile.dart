@@ -126,27 +126,27 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     children: [
                       ProfileDetailRow(
                         icon: Icons.cake,
-                        label: 'Birthday',
+                        label: 'Doğum Tarihi',
                         value: _dateOfBirth,
                       ),
                       ProfileDetailRow(
                         icon: Icons.line_weight,
-                        label: 'Weight',
+                        label: 'Kilo',
                         value: _weight + ' KG',
                       ),
                       ProfileDetailRow(
                         icon: Icons.height,
-                        label: 'Height',
+                        label: 'Boy',
                         value: _height + ' CM',
                       ),
                       ProfileDetailRow(
                         icon: Icons.transgender,
-                        label: 'Gender',
+                        label: 'Cinsiyet',
                         value: _gender,
                       ),
                       ProfileDetailRow(
                         icon: Icons.email,
-                        label: 'Email/Phone',
+                        label: 'Email/Telefon',
                         value: _emailOrPhone,
                       ),
                     ],
@@ -169,19 +169,19 @@ class _ProfileScreenState extends State<ProfileScreen> {
         tabs: const [
           GButton(
             icon: Icons.home,
-            text: "Home",
+            text: "Ana Sayfa",
           ),
           GButton(
             icon: Icons.fitness_center,
-            text: "Exercise",
+            text: "Egzersiz",
           ),
           GButton(
             icon: Icons.person,
-            text: "Profile",
+            text: "Profil",
           ),
           GButton(
             icon: Icons.settings,
-            text: "Settings",
+            text: "Ayarlar",
           ),
         ],
       ),

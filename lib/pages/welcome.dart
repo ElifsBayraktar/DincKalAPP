@@ -142,7 +142,7 @@ class _splashscreenState extends State<Splashscreen> {
                       const BoxConstraints(minWidth: 88, minHeight: 36),
                   alignment: Alignment.center,
                   child: Text(
-                    currentIndex == contents.length - 1 ? "Continue" : "Next",
+                    currentIndex == contents.length - 1 ? "Devam Et" : "İleri",
                     style: const TextStyle(color: Colors.white),
                   ),
                 ),
@@ -179,15 +179,15 @@ class UnbordingContent {
 
 List<UnbordingContent> contents = [
   UnbordingContent(
-    title: 'stay healthy',
+    title: 'Sağlıklı Kal',
     image: 'assets/images/welcome.jpeg',
   ),
   UnbordingContent(
-    title: 'looks fit',
+    title: 'Fit Görün',
     image: 'assets/images/welcome2.jpeg',
   ),
   UnbordingContent(
-    title: 'be happy',
+    title: 'Mutlu Ol',
     image: 'assets/images/welcome3.jpeg',
   ),
 ];

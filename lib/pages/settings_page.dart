@@ -64,7 +64,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     },
                   ),
                   const Text(
-                    'Settings',
+                    'Ayarlar',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 24,
@@ -77,7 +77,7 @@ class _SettingsPageState extends State<SettingsPage> {
             ),
             ListTile(
               title: const Text(
-                'Enable Notifications',
+                'Bildirimler',
                 style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
@@ -97,7 +97,7 @@ class _SettingsPageState extends State<SettingsPage> {
             ),
             ListTile(
               title: const Text(
-                'Language',
+                'Dil',
                 style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
@@ -128,7 +128,7 @@ class _SettingsPageState extends State<SettingsPage> {
               ),
             ),
             ListTile(
-              title: const Text('Privacy',
+              title: const Text('Gizlilik',
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
@@ -158,19 +158,19 @@ class _SettingsPageState extends State<SettingsPage> {
         tabs: const [
           GButton(
             icon: Icons.home,
-            text: "Home",
+            text: "Ana Sayfa",
           ),
           GButton(
             icon: Icons.fitness_center,
-            text: "Exercise",
+            text: "Egzersiz",
           ),
           GButton(
             icon: Icons.person,
-            text: "Profile",
+            text: "Profil",
           ),
           GButton(
             icon: Icons.settings,
-            text: "Settings",
+            text: "Ayarlar",
           ),
         ],
       ),
@@ -239,7 +239,7 @@ class _PrivacySettingsPageState extends State<PrivacySettingsPage> {
                     },
                   ),
                   const Text(
-                    'Privacy Settings',
+                    'Gizlilik',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 24,
@@ -251,7 +251,7 @@ class _PrivacySettingsPageState extends State<PrivacySettingsPage> {
               ),
             ),
             _buildPrivacyTile(
-              'Location Tracking',
+              'Konum',
               _locationTrackingEnabled,
               (bool value) {
                 setState(() {
@@ -260,7 +260,7 @@ class _PrivacySettingsPageState extends State<PrivacySettingsPage> {
               },
             ),
             _buildPrivacyTile(
-              'Data Sharing',
+              'Bilgi Paylaşımı',
               _dataSharingEnabled,
               (bool value) {
                 setState(() {
@@ -269,7 +269,7 @@ class _PrivacySettingsPageState extends State<PrivacySettingsPage> {
               },
             ),
             _buildPrivacyTile(
-              'Account Private',
+              'Hesap Gizliliği',
               _accountPrivate,
               (bool value) {
                 setState(() {
@@ -279,7 +279,7 @@ class _PrivacySettingsPageState extends State<PrivacySettingsPage> {
             ),
             ListTile(
               title: const Text(
-                'Clear Search History',
+                'Geçmiş',
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
@@ -292,7 +292,7 @@ class _PrivacySettingsPageState extends State<PrivacySettingsPage> {
                   // Clear search history logic
                   ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(
-                      content: Text('Search history cleared'),
+                      content: Text(''),
                     ),
                   );
                 },
@@ -313,19 +313,19 @@ class _PrivacySettingsPageState extends State<PrivacySettingsPage> {
         tabs: const [
           GButton(
             icon: Icons.home,
-            text: "Home",
+            text: "Ana Sayfa",
           ),
           GButton(
             icon: Icons.fitness_center,
-            text: "Exercise",
+            text: "Egzersiz",
           ),
           GButton(
             icon: Icons.person,
-            text: "Profile",
+            text: "Profil",
           ),
           GButton(
             icon: Icons.settings,
-            text: "Settings",
+            text: "Ayarlar",
           ),
         ],
       ),

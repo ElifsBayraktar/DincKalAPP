@@ -7,7 +7,9 @@ import '../../pages/profile.dart';
 import '../../pages/settings_page.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({
+    Key? key,
+  }) : super(key: key);
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -68,16 +70,16 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         child: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Column(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      "Welcome Back",
+                      "Hoşgeldiniz",
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 22,
@@ -90,18 +92,61 @@ class _HomeScreenState extends State<HomeScreen> {
                         fontSize: 29,
                       ),
                     ),
-                  ],
-                ),
-                Column(
-                  children: [
-                    CircleAvatar(
-                      backgroundImage: AssetImage('assets/images/welcome.jpeg'),
-                      radius: 35,
+                    const SizedBox(height: 20),
+                    const Text(
+                      "Dinç Kal App'e hoş geldin. Dilersen antrenmanları inceleyebilir veya sadece fit yemek tariflerine bakabilirsin.",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16,
+                      ),
                     ),
                   ],
                 ),
-              ],
-            ),
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Expanded(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: Center(
+                            child: Image.asset(
+                              'assets/images/göğüs.jpeg',
+                              width: 500,
+                              height: 500,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 20),
+                      Expanded(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.green,
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: Center(
+                            child: Image.asset(
+                              'assets/images/fityemek.jpeg',
+                              width: 500,
+                              height: 500,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
       ),
@@ -117,19 +162,19 @@ class _HomeScreenState extends State<HomeScreen> {
         tabs: const [
           GButton(
             icon: Icons.home,
-            text: "Home",
+            text: "Ana Sayfa",
           ),
           GButton(
             icon: Icons.fitness_center,
-            text: "Exercise",
+            text: "Egzersiz",
           ),
           GButton(
             icon: Icons.person,
-            text: "Profile",
+            text: "Profil",
           ),
           GButton(
             icon: Icons.settings,
-            text: "Settings",
+            text: "Ayarlar",
           ),
         ],
       ),

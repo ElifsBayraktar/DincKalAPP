@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../common/colo_extension.dart';
 import '../common_widg/round_button.dart';
 import 'tab_button.dart';
-import 'workoutdetail.dart';
+import 'workoutdetailview.dart';
 
 class ExerciseScreen extends StatefulWidget {
   const ExerciseScreen({super.key});
@@ -143,17 +143,6 @@ class _ExerciseScreenState extends State<ExerciseScreen> {
                     onPressed: () {
                       setState(() {
                         isActiveTab = 3;
-                      });
-                    },
-                  ),
-                ),
-                Expanded(
-                  child: TabButton(
-                    title: "Fit Yemek",
-                    isActive: isActiveTab == 1,
-                    onPressed: () {
-                      setState(() {
-                        isActiveTab = 1;
                       });
                     },
                   ),

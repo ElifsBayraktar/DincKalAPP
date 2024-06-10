@@ -7,6 +7,7 @@ environment:
   sdk: '>=3.3.1 <4.0.0'
 
 dependencies:
+  cached_network_image: ^3.3.1
   carousel_slider: ^4.2.1
   dotted_dashed_line: ^0.0.3
   fl_chart: ^0.68.0
@@ -27,12 +28,20 @@ dependencies:
   simple_circular_progress_bar: ^1.0.2
   sqflite: ^2.3.3+1
   syncfusion_flutter_charts: ^25.2.7
+  table_calendar: ^3.1.2
+  intl: ^0.19.0
   url_launcher: ^6.2.6
+  
+  
+  
+  
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.0
+  
+  
 
 flutter:
   uses-material-design: true
@@ -61,6 +70,7 @@ flutter:
   - assets/images/Leg_Curlbacak.png
   - assets/images/Lungesbacak.png
   - assets/images/Squatbacak.png
+  - assets/images/fityemek.jpeg
 
 fonsts:
   - family: Poppins

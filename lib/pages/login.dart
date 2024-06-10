@@ -43,14 +43,14 @@ class _LoginScreenState extends State<LoginScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                    "Login",
+                    "Giriş",
                     style: TextStyle(color: Colors.white, fontSize: 45),
                   ),
                   SizedBox(
                     height: 2,
                   ),
                   Text(
-                    "Welcome Back",
+                    "Hoşgeldiniz",
                     style: TextStyle(color: Colors.white, fontSize: 25),
                   ),
                 ],
@@ -137,7 +137,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               controller: _passwordController,
                               obscureText: true,
                               decoration: const InputDecoration(
-                                hintText: "Password",
+                                hintText: "Parola",
                                 hintStyle: TextStyle(color: Colors.blueGrey),
                                 border: InputBorder.none,
                               ),
@@ -150,7 +150,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       height: 150,
                     ),
                     const Text(
-                      "Forgot Password?",
+                      "Şifremi Hatırlamıyorum",
                       style: TextStyle(color: Colors.blueGrey),
                     ),
                     const SizedBox(
@@ -185,7 +185,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                         child: const Center(
                           child: Text(
-                            "Login",
+                            "Giriş Yap",
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 18,
@@ -208,7 +208,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         );
                       },
                       child: const Text(
-                        "Create Account?",
+                        "Hesap Oluştur?",
                         style: TextStyle(color: Colors.blueGrey),
                       ),
                     ),

@@ -44,12 +44,12 @@ class RegisterScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                    "Register",
+                    "Kayıt Ol",
                     style: TextStyle(color: Colors.white, fontSize: 45),
                   ),
                   SizedBox(height: 2),
                   Text(
-                    "Create your account",
+                    "Hesap Oluştur",
                     style: TextStyle(color: Colors.white, fontSize: 25),
                   ),
                 ],
@@ -87,7 +87,7 @@ class RegisterScreen extends StatelessWidget {
                           TextField(
                             controller: nameController,
                             decoration: const InputDecoration(
-                              hintText: "Name",
+                              hintText: "Kullanıcı Adı",
                               hintStyle: TextStyle(color: Colors.blueGrey),
                               border: InputBorder.none,
                             ),
@@ -114,7 +114,7 @@ class RegisterScreen extends StatelessWidget {
                           TextField(
                             controller: emailOrPhoneController,
                             decoration: const InputDecoration(
-                              hintText: "Email or Phone Number",
+                              hintText: "Email veya Telefon Numarası",
                               hintStyle: TextStyle(color: Colors.blueGrey),
                               border: InputBorder.none,
                             ),
@@ -142,7 +142,7 @@ class RegisterScreen extends StatelessWidget {
                             controller: passwordController,
                             obscureText: true,
                             decoration: const InputDecoration(
-                              hintText: "Password",
+                              hintText: "Parola",
                               hintStyle: TextStyle(color: Colors.blueGrey),
                               border: InputBorder.none,
                             ),
@@ -182,7 +182,7 @@ class RegisterScreen extends StatelessWidget {
                         ),
                         child: const Center(
                           child: Text(
-                            "Register",
+                            "Kayıt Ol",
                             style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold),
