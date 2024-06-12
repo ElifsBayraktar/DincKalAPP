@@ -1,22 +1,35 @@
-# dinckallapp
+![Detail](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/d79c2b68-335a-4227-8339-57999bfbc2a8)![Detail2](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/fb4f5a37-b7c0-42d8-a707-be96880812f1)# dinckallapp
 Uygulama Görselleri
+![Splash1](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/e34d85f2-a812-48dc-957d-3f39714b219a)
+![Splash2](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/7a3e653d-9dc1-4dc2-af13-8b99606fcc64)
+![Splash3](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/5a0d5f28-ba5e-41ac-891a-bd87f6011473)
+![Register](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/7b5824c8-796a-445e-8d4a-8a6e178187cb)
 
-![Simulator Screenshot - iPhone 15 Pro Max - 2024-06-10 at 22 18 05](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/ace6b44a-aa3f-470a-b1db-b702f07f25d0)
-![Simulator Screenshot - iPhone 15 Pro Max - 2024-06-10 at 22 19 08](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/731445f1-cf5a-4e1c-9668-9066a05c4a32)
-![Simulator Screenshot - iPhone 15 Pro Max - 2024-06-10 at 22 19 12](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/3820b575-4448-4b1d-8e34-a3ad43d4d3c8)
-![Simulator Screenshot - iPhone 15 Pro Max - 2024-06-10 at 22 19 29](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/457dda53-238e-4028-9764-6af171d2ae88)
-![Simulator Screenshot - iPhone 15 Pro Max - 2024-06-10 at 22 21 31](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/55429373-3059-4e7b-81c1-3abe4233d44c)
-![Simulator Screenshot - iPhone 15 Pro Max - 2024-06-10 at 22 23 11](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/158fce4c-f71d-4dd3-bdc3-4d3632e28b3a)
-![Simulator Screenshot - iPhone 15 Pro Max - 2024-06-10 at 22 23 08](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/d9613af9-d7ba-4298-b63a-b8aabb5d7104)
-![Simulator Screenshot - iPhone 15 Pro Max - 2024-06-10 at 22 23 05](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/1eb2a233-d1ec-4997-9767-3565760a4221)
-![Simulator Screenshot - iPhone 15 Pro Max - 2024-06-10 at 22 23 02](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/f160710f-7276-4378-a0de-a7b7c129b9f6)
-![Simulator Screenshot - iPhone 15 Pro Max - 2024-06-10 at 22 23 00](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/d9a43c6f-7cee-4cc4-98f2-085faf085147)
-![Simulator Screenshot - iPhone 15 Pro Max - 2024-06-10 at 22 22 57](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/b31e63df-c08a-43ac-aa35-4eb161e8d7e5)
-![Simulator Screenshot - iPhone 15 Pro Max - 2024-06-10 at 22 22 32](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/7ce61ed7-81a4-462d-9725-08cecd052cd5)
+![Login](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/75cc3475-4a50-4d64-9662-66dc423f08e9)
 
-![Simulator Screenshot - iPhone 15 Pro Max - 2024-06-10 at 22 24 44](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/39f3869e-aea4-410d-af3d-3c53a6868575)
-![Simulator Screenshot - iPhone 15 Pro Max - 2024-06-10 at 22 24 37](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/8e1645dd-f030-4148-9fd1-2b41cfa46b9d)
-![Simulator Screenshot - iPhone 15 Pro Max - 2024-06-10 at 22 24 29](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/a996fe66-300a-4f1a-88fa-4b8cf52682d0)
-![Simulator Screenshot - iPhone 15 Pro Max - 2024-06-10 at 22 23 17](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/a5d73d9b-3751-4798-8c42-fcca1de0fc7c)
-![Simulator Screenshot - iPhone 15 Pro Max - 2024-06-10 at 22 23 14](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/0bafdb5f-a551-41c8-b4bb-8d046f65848b)
-![Simulator Screenshot - iPhone 15 Pro Max - 2024-06-10 at 22 24 49](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/f40dd5e2-77ee-4655-b62d-26a55ebb3b17)
+![CompleteProfile](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/5ddc4ff9-5eb4-4265-96dd-8c04a9caf66c)
+
+![WhatisYourGoal?](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/828bfc35-42d5-4080-a04d-682b9db8fbb7)
+
+![WhatisYourGoal?2](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/dce28abe-ec49-4ea4-9558-cd3897080e0f)
+
+![Home](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/e87b58ec-3951-4662-8fda-9d972787586f)
+
+
+![Settings](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/6d6ed856-b8df-4b25-b74d-65c232c64316)
+
+![Privacy](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/f3e2e678-8a14-4da9-ba9b-3a8a7922d321)
+
+
+![Profile](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/942b829f-ada7-471c-b97b-21395374b933)
+![Exercise](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/c3f87dc6-496d-42aa-9f56-f49eaede5732)
+
+
+![Detail](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/d79c2b68-335a-4227-8339-57999bfbc2a8)
+
+
+
+
+![Detail2](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/fb4f5a37-b7c0-42d8-a707-be96880812f1)
+
+
