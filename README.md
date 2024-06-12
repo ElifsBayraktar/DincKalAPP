@@ -1,4 +1,4 @@
-![Detail](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/d79c2b68-335a-4227-8339-57999bfbc2a8)![Detail2](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/fb4f5a37-b7c0-42d8-a707-be96880812f1)# dinckallapp
+
 Uygulama Görselleri
 ![Splash1](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/e34d85f2-a812-48dc-957d-3f39714b219a)
 ![Splash2](https://github.com/ElifsBayraktar/DincKalAPP/assets/148531552/7a3e653d-9dc1-4dc2-af13-8b99606fcc64)
